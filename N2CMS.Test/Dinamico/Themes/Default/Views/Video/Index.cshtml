@@ -1,0 +1,23 @@
+﻿@model Dinamico.Models.Pages.Video
+
+<h1>@Model.Title  @@ @Model.SavedBy</h1> 
+
+@{
+    var embedLink = "http://www.youtube.com/embed/"+Model.VideoUrl.Split('=')[1];
+    
+}
+
+<iframe id="ytplayer" type="text/html" width="640" height="390"
+        src="@embedLink"
+        frameborder="0" ></iframe>
+
+@Html.Raw(Model.Text)
+
+
+<div id="tags">
+    @foreach (var tag in Model.Tags)
+    {
+        @Model.Tags
+        <a href="Video/Search?tag=@tag" class="btn btn-danger">@tag</a>
+    }
+</div>

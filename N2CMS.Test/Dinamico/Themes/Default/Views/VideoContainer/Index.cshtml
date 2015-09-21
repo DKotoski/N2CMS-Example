@@ -1,0 +1,31 @@
+﻿@model Dinamico.Models.VideoContainerModel
+
+
+
+
+@foreach (var video in Model.Videos)
+{
+    
+    <div class="videoContainer">
+        <a href="@video.Url">
+            @{
+    var tumbnailLink = "http://img.youtube.com/vi/" + video.VideoUrl.Split('=')[1] + "/0.jpg";
+            }
+            <h2>@video.Title @@ @video.SavedBy</h2>
+            <div style="margin: auto; width: 460px; height: 250px;">
+                <img src="@tumbnailLink" style=" width: 460px; height: 250px;" />
+            </div>
+
+            <p> @video.Summary</p>
+        </a>
+    </div>   
+
+    
+    <div class="separator">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+}
+
+
