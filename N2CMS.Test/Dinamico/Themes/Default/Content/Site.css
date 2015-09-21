@@ -22,6 +22,10 @@ ul.nav li a.logotype {
 
 #main > img { margin: 0 15px; }
 
+#main{
+    margin:auto !important;
+}
+
 .part {
 	margin-bottom:15px;
 }
@@ -39,6 +43,11 @@ ul.nav li a.logotype {
 	margin:20px 10px 10px 0;
 }
 
+
+#content{
+    float:none !important;
+    margin:auto;
+}
 .carousel .part {
 	margin-bottom:0;
 }
@@ -61,17 +70,19 @@ td {
 .videoContainer{
     width:500px;
     height:400px;
-    background-color:rgba(200,200,200,0.5);
-    -webkit-box-shadow: 10px 10px 48px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 10px 10px 48px 0px rgba(0,0,0,0.5);
-    box-shadow: 10px 10px 48px 0px rgba(0,0,0,0.5);
-    margin:50px;
+    background-color:rgba(200,200,200,0.4);
+    -webkit-box-shadow: 0px 30px 256px -10px rgba(0,0,0,0.5);
+    -moz-box-shadow:  0px 30px 256px -10px rgba(0,0,0,0.5);
+    box-shadow:  0px 30px 256px -10px rgba(0,0,0,0.5);
+    margin:50px auto;
     padding:10px;
+    
 }
 
 .separator{
     width:600px;
     text-align:center;
+    margin:auto;
 }
 
 .circle{
@@ -82,4 +93,28 @@ td {
     display:inline-block;
 }
 
+.separator:link{
+    color:black;
+    text-decoration:none;
+}
+
+.separator:hover{
+    color:black;
+    text-decoration:none;
+}
+
+.separator:visited{
+    color:black;
+    text-decoration:none;
+}
+
+#pageCenter{
+    margin:auto;
+    margin:
+}
+
 /*Video Styling stuff end*/
+
+.sc{
+    top:50% !important;
+}

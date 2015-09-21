@@ -1,7 +1,7 @@
 ﻿@model Dinamico.Models.VideoContainerModel
 
 
-
+<div id="pageCenter" style="margin:auto;">
 
 @foreach (var video in Model.Videos)
 {
@@ -27,5 +27,14 @@
         <div class="circle"></div>
     </div>
 }
+
+    </div>
+
+<script>
+    $(function () { $(".separator").last().remove(); });
+
+</script>
+
+
 
 
